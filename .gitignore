@@ -47,3 +47,6 @@ softcenter/softcenter/res/icon-*.png
 */*/.valid
 softcenter/__pycache__
 
+# UPX temporary files
+tailscale/upx_temp/
+

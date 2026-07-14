@@ -1,5 +1,9 @@
 Koolshare Asuswrt-Merlin ZeroTier Changelog for HND/AXHND platform
 ===========================================
+2.0.9
+   - update	binary update to 1.98.8
+   - update	采用官方推荐的小体积构建方法，使用ts_include_cli标签构建combined二进制，ARM/ARM64分别降至7.6MB/8.2MB
+
 2.0.0 - 2.0.1
    - update	binary update to 1.78.1
 

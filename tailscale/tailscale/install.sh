@@ -117,6 +117,13 @@ install_now(){
 	cp -rf /tmp/${module}/webs/* /koolshare/webs/
 	cp -rf /tmp/${module}/uninstall.sh /koolshare/scripts/uninstall_${module}.sh
 
+	# create symlinks for tailscale/tailscaled
+	cd /koolshare/bin
+	if [ -f "tailscale.combined" ]; then
+		ln -sf tailscale.combined tailscaled
+		ln -sf tailscale.combined tailscale
+	fi
+
 	# Permissions
 	chmod 755 /koolshare/bin/tailscale* >/dev/null 2>&1
 	chmod 755 /koolshare/scripts/tailscale*.sh >/dev/null 2>&1
